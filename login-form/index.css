@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Poppins:wght@400;500;600;700&family=Roboto:wght@500;700;900&family=Rubik:ital,wght@0,300;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+form{
+    margin: 80px auto;
+    background-color: #ffffff33;
+    border-radius: 5px;
+    padding: 15px 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+form .fill-info{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.input-block{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px 15px;
+}
+label{
+    position: absolute;
+    background-color: white;
+    color: black;
+    left: 15px;
+    top: 10px;
+    transition: top 300ms, color 300ms, border-color 300ms, font-size 300ms;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label{
+    top: -15px;
+    color: blue;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 0 5px;
+}
+.login{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons a{
+    background-color: rgba(255, 255, 255, 0.226);
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.buttons a img{
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
